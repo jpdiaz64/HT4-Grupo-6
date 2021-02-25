@@ -9,7 +9,8 @@ public class Vista {
         boolean verificación =true;
         while (verificación)
         {
-            System.out.println();
+            System.out.println("Que implementación desea utilizar");
+            System.out.println("1)");
         }
 
 

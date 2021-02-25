@@ -1,28 +1,47 @@
 public class StackLSimple<E> extends StackClase<E>{
 
+    ListaSimple<E> head;
+    int size;
+
+    public StackLSimple()
+    {
+        head=null;
+        size=0;
+    }
+
     @Override
     public E pop() {
-        return null;
+        if (head==null)
+        {
+            System.out.println("Error nada en el Stack");
+
+        }
+        E temp= (E)head.data;
+        head=head.siguiente;
+        size--;
+        return temp;
     }
 
     @Override
     public int size() {
-        return 0;
+        return size;
     }
 
     @Override
     public E peek() {
-        return null;
+        return head.data;
     }
 
     @Override
     public void push(E ingreso) {
-
+        ListaSimple<E> temp= new ListaSimple<E>(ingreso,head);
+        head=temp;
+        size++;
     }
 
     @Override
     public boolean empty() {
-        return super.empty();
+        return size==0;
     }
 
 }
