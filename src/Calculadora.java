@@ -1,14 +1,14 @@
-public final class Calculadora implements CalculadoraGeneral
+public class Calculadora
 {
-
-    private Calculadora()
+    StackClase MyStack;
+    public Calculadora(StackClase e)
     {
-
+        MyStack = e;
     }
-    Stack MyStack;
+
     public String Calculo(String expresion)
     {
-        MyStack= new StackVector();
+        //MyStack= new Stack();
         String respuesta="Opereación no valida";
 
         /**Separar números de digitos*/
@@ -53,8 +53,5 @@ public final class Calculadora implements CalculadoraGeneral
         return respuesta;
     }
 
-    public Calculadora GetInstance()
-    {
-        return
-    }
+
 }
