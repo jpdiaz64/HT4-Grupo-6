@@ -1,0 +1,2 @@
+Considero que Singleton es una forma interesante y utili de tener un acceso global y unico, pero para esta implementación
+la considero inutil ya que unicamente se necesita una instancia de calculadora
